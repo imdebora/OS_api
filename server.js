@@ -8,3 +8,5 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.listen(process.env.PORT || 3306, (err) => {
 	err ? console.log("err", err) : console.log ("Tudo funcionando!")
 });
+
+spring.profiles.active=dev
